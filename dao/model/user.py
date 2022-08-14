@@ -11,6 +11,7 @@ class User(db.Model):
     username = db.Column(db.String)
     password = db.Column(db.String)
     role = db.Column(db.String)
+    favorite_movie = db.Column(db.String)
 
 
 """Схема описания модели user"""
@@ -21,3 +22,4 @@ class UserSchema(Schema):
     username = fields.Str()
     password = fields.Str()
     role = fields.Str()
+    favorite_movie = fields.Str()
